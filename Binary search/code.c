@@ -2,12 +2,16 @@
 
 int main()
 {
-   int c, first, last, middle, n, search, array[25];
+   int first, last, middle, n, search, array[25];
+
    printf("Enter number of elements:\n");
    scanf("%d",&n); 
    printf("Enter %d integers:\n", n);
-   for (c = 0; c < n; c++)
-      scanf("%d",&array[c]); 
+    
+    for (int i = 0; i < n; i++)
+      {scanf("%d",&array[i]); }
+
+
    printf("Enter the value to find:\n");
    scanf("%d", &search);
    first = 0;
@@ -26,5 +30,5 @@ int main()
    }
    if (first > last)
       printf("Not found!");
-   return 0;  
+   return (0);  
 }
